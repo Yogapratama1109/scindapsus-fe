@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="../assets/css/user.css">
 
@@ -25,7 +28,7 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light py-0 px-5">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="width: 60px;">
                     <img src="../assets/img/user-page/logo-text.svg" alt="" width="200">
@@ -55,7 +58,8 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Community</a>
                       </li>
-                      <li class="nav-item dropdown">
+                      <!-- after login -->
+                      <!-- <li class="nav-item dropdown">
                         <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../assets/img/user-page/profile.png" alt="" srcset="" class="img-profile">
                             Halo, Beatrice!
@@ -65,15 +69,62 @@
                           <li><a class="dropdown-item border-b" href="#">My Cultivar</a></li>
                           <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
+                      </li> -->
+                      <li class="nav-item btn-nav">
+                        <div class="d-flex">
+                            <a class="btn btn-outline-success">Sign In</a>
+                            <a class="btn btn-success" style="margin-left: 10px;">Sign Up</a>
+                        </div>
                       </li>
                     </ul>
                   </div>
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container content">
             <div class="slider">
             
+            </div>
+
+            <div class="section-card">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="card item" style="width: 18rem;">
+                      <img src="../assets/img/user-page/frame-1.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">You can search for existing cultivars</h5>
+                        <p class="card-text">Find the plant you are looking for</p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                      </div>
+                    </div>
+                    <div class="card item" style="width: 18rem;">
+                      <img src="../assets/img/user-page/frame-2.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">What is a cultivar ?</h5>
+                        <p class="card-text">Read more about a cultivar</p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                      </div>
+                    </div> 
+                    <div class="card item" style="width: 18rem;">
+                      <img src="../assets/img/user-page/frame-3.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">How to register? </h5>
+                        <p class="card-text">Contains a guide to register Your Cultivar </p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                      </div>
+                    </div>
+                    <div class="card item" style="width: 18rem;">
+                      <img src="../assets/img/user-page/frame-4.svg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Scindapsus Community</h5>
+                        <p class="card-text">Come join us!</p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-regis">
+                
             </div>
         </div>
     </div>
