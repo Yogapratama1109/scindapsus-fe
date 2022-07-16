@@ -124,7 +124,73 @@
 
 .section-regis {
     background: #19C078;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
     margin: 80px 0;
-    padding-top: 30px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.12);
+    clip-path: circle(650px at right 850px);
+}
+
+.section-regis .regis-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.regis-content .textBox {
+    position: relative;
+    max-width: 700px;
+    padding-left: 8%;
+}
+
+.regis-content .textBox h2 {
+    color: #333;
+    font-size: 2.8em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.regis-content .textBox h2 span {
+    color: #e12e56;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.regis-content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #e12e56;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.regis-content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.regis-content .imgBox img {
+    max-width: 500px;
 }
