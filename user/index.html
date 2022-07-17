@@ -17,7 +17,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Slick CSS -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css"/>
 
     <!-- custom css -->
@@ -28,7 +28,7 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5 py-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="width: 60px;">
                     <img src="../assets/img/user-page/logo-text.svg" alt="">
@@ -73,7 +73,7 @@
                       <li class="nav-item btn-nav">
                         <div class="d-flex">
                             <a class="btn btn-outline-success">Sign In</a>
-                            <a class="btn btn-success" style="margin-left: 10px;">Sign Up</a>
+                            <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
                         </div>
                       </li>
                     </ul>
@@ -83,11 +83,39 @@
     </div>
 
     <div class="slider-hero">
-        <div class="wrap-hero text-center text-white">
+        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" data-bs-interval="6000">
+            <div class="carousel-item active">
+                <div class="w-100">
+                    <div class="wrap-hero text-center text-white">
+                      <h1 style="font-weight: 700">Welcome to the Cultivar Registry for Indonesian Scindapsus!</h1>
+                        <p class="my-4" style="font-size: 20px">#theheartofindonesia</p>
+                        <a href="#" class="btn btn-success gradient ms-auto">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <div class="w-100">
+                    <div class="wrap-hero w-100 text-center text-white">
+                      <h1 style="font-weight: 700">Come join us for a better experience!</h1>
+                        <p class="my-4" style="font-size: 20px">#theheartofindonesia</p>
+                        <a href="#" class="btn btn-success gradient ms-auto">Learn More</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <!-- <div class="wrap-hero text-center text-white">
             <h1 style="font-weight: 700">Welcome to the Cultivar Registry for Indonesian Scindapsus!</h1>
             <p class="my-4" style="font-size: 20px">#theheartofindonesia</p>
             <a href="#" class="btn btn-success gradient ms-auto">Learn More</a>
-        </div>
+        </div> -->
     </div>
 
     <div class="container">
@@ -96,7 +124,7 @@
                 <div class="card item" style="width: 18rem;">
                     <img src="../assets/img/user-page/frame-1.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">You can search for existing cultivars</h5>
+                        <h3 class="card-title">You can search for existing cultivars</h3>
                         <p class="card-text">Find the plant you are looking for</p>
                         <a href="#" class="btn btn-success gradient">Start</a>
                     </div>
@@ -104,7 +132,7 @@
                 <div class="card item" style="width: 18rem;">
                     <img src="../assets/img/user-page/frame-2.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">What is a cultivar ?</h5>
+                        <h3 class="card-title">What is a cultivar ?</h3>
                         <p class="card-text">Read more about a cultivar</p>
                         <a href="#" class="btn btn-success gradient">Start</a>
                     </div>
@@ -112,7 +140,7 @@
                 <div class="card item" style="width: 18rem;">
                     <img src="../assets/img/user-page/frame-3.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">How to register? </h5>
+                        <h3 class="card-title">How to register? </h3>
                         <p class="card-text">Contains a guide to register Your Cultivar </p>
                         <a href="#" class="btn btn-success gradient">Start</a>
                     </div>
@@ -120,7 +148,7 @@
                 <div class="card item" style="width: 18rem;">
                     <img src="../assets/img/user-page/frame-4.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Scindapsus Community</h5>
+                        <h3 class="card-title">Scindapsus Community</h3>
                         <p class="card-text">Come join us!</p>
                         <a href="#" class="btn btn-success gradient">Start</a>
                     </div>
@@ -175,7 +203,33 @@
                         </div>
                     </div>
                     <div class="card-slider swiper-slide">
-                        <img src="../assets/img/user-page/plant3.png">
+                        <img src="../assets/img/user-page/plant4.jpg">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-8">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-center">
+                                 <i class="fa-brands fa-gratipay text-secondary" style="font-size: 1.5rem;"></i>
+                                <h5 class="text-secondary">100</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant5.jpg">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-8">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-center">
+                                 <i class="fa-solid fa-heart text-danger" style="font-size: 1.5rem;"></i>
+                                <h5 class="text-secondary">100</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant6.png">
                         <div class="row" style="margin-top: 15px">
                             <div class="col-8">
                                 <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
@@ -229,11 +283,8 @@
 
     <div class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="d-flex align-items-center">
-                    <img src="../assets/img/user-page/footer-logo.svg" alt="" width="30" style="margin-top: -25px; margin-right: 10px;">
-                    <p class="text-white" style="font-weight: 600;">Scindapsus <br>Indonesia</p>
-                </div>
+            <div class="footer-content py-3">
+                <img src="../assets/img/user-page/logo-white.svg" alt="">
                 <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
                     <li class="li-r">Home</li>
                     <li class="li-r">About</li>
@@ -257,14 +308,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-     <!-- Slick JS -->    
+     <!-- Swiper JS -->    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
     <script type="text/javascript">
          
     var swiper = new Swiper(".slide-content", {
         slidesPerView: 3,
-        spaceBetween: 25,
-        loop: true,
+        slidesPerColumn: 2,
+        loop: false,
+        spaceBetween: 30,
         centerSlide: 'true',
         fade: 'true',
         grabCursor: 'true',
