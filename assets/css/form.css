@@ -29,6 +29,16 @@
     }
 }
 
+
+.label-input {
+    background: linear-gradient(270deg, #19C078 0%, #4FDF85 77.91%);
+    border-radius: 20rem;
+    color: white;
+    padding: .6rem 2rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
 /* End Costom */
 
 /* Banner */

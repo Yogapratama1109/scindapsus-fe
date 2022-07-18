@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.swiper-pagination-bullet-active{
+    background-color: black !important;
+}
+
 .f-700 {
     font-weight: 700;
 }
