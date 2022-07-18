@@ -93,6 +93,11 @@
     color: #fff;
 }
 
+.btn-outline-success:hover{
+    color: white;
+    background-color: #19C078;
+}
+
 /* hero */
 .slider-hero {
     width: 100%;
