@@ -185,20 +185,9 @@
     background: transparent !important;
     margin: 40px 40px 0 0;
     width: 40% !important;
-    height: 460px;
-    position: relative;
-}
-
-@media (max-width: 1199px) {
-    .card.item {
-        height: 420px;
-    }
 }
 
 @media (max-width: 991px) {
-    .card.item {
-        height: 360px;
-    }
     .card.item .card-title {
         font-size: 1.5rem;
     }
@@ -207,7 +196,6 @@
 @media (max-width: 768px) {
     .card.item {
         width: 45% !important;
-        height: 20rem;
         margin: 40px 20px 0 0;
     }
     .card.item .card-title {
@@ -221,7 +209,6 @@
 @media (max-width: 576px) {
     .card.item {
         width: 60% !important;
-        height: 20.5rem;
         margin: 20px 0;
     }
 }
@@ -233,15 +220,7 @@
 
 .card.item .card-text {
     color: #0E0E0E;
-    position: absolute;
-    left: 15px;
-    bottom: 40px;
-}
-
-.card.item .btn-success.gradient {
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
+    padding-top: 15px;
 }
 
 /* registration  */
@@ -497,7 +476,7 @@ img.img-join {
     align-items: center;
 }
 
-.footer-content img {
+.footer-content a img {
     max-width: 260px;
     margin-top: -20px;
 }
