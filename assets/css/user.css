@@ -723,10 +723,3 @@ p.copyright {
   .dataTables_wrapper .dataTables_paginate .paginate_button {
     background: #fff;
   }
-  
-  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    background: red;
-    background-color: red;
-    color: #2db777;
-  }
-  
