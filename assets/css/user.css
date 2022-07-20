@@ -514,3 +514,219 @@ p.copyright {
         font-size: 12px !important;
     }
 }
+
+.hero-account {
+    margin-top: 70px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hero-account h1 {
+    font-style: 81px;
+    font-weight: 700;
+  }
+  
+  .hero-account a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .hero-account a img {
+    margin-left: 5px;
+    height: 20px;
+  }
+  
+  .hero-account .hero-text {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+  }
+  
+  .cultivar-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cultivar-data {
+    padding: 0;
+  }
+  
+  .cultivar-data h2 {
+    font-weight: 600;
+    margin-bottom: -40px;
+  }
+  
+  .cultivar-data .table {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #dcdcdc;
+  }
+  
+  .cultivar-data .table-responsive th {
+    border-bottom: 2px solid #dcdcdc;
+    font-weight: normal;
+  }
+  
+  .cultivar-data .table-responsive td {
+    border-bottom: 0px solid #dcdcdc;
+    font-weight: normal;
+  }
+  
+  .cultivar-data .table-responsive tr:nth-child(2n) {
+    background-color: #f8f8f8;
+    font-weight: normal;
+  }
+  
+  .cultivar-data .table-responsive th,
+  .cultivar-data .table-responsive td {
+    padding: 20px;
+  }
+  
+  .cultivar-data .table-responsive .status-pill .fa-circle {
+    font-size: 5px;
+    margin-right: 5px;
+  }
+  
+  .cultivar-data .table-responsive .status-pill .fa-angle-down {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .cultivar-data .table-responsive .status-info {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  
+  .cultivar-data .table-responsive .status-pill {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cultivar-data .user-profile-table {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -20px;
+    border: 2px solid #fff;
+  }
+  
+  .cultivar-data .user-profile {
+    display: flex;
+  }
+  
+  .cultivar-data .user-more {
+    display: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: -20px;
+    border: 2px solid #fff;
+    background-color: #19c078;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .modal-content {
+    border-radius: 15px;
+  }
+  
+  .imageModal img {
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .imageModal {
+    width: 400px;
+    margin-top: 50px;
+  }
+  
+  .imageModal .modal-footer {
+    padding: 10px 20px;
+  }
+  
+  .imageModal .imageModal-date {
+    font-size: 10px;
+    margin-top: 20px;
+    color: #8c8c8c;
+  }
+  
+  .imageModalcloseButton {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .imageModalcloseButton button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+    z-index: 9;
+    font-size: large;
+    margin-right: -20px;
+  }
+  
+  @media (max-width: 990px) {
+    .hero-account {
+      padding: 50px 20px;
+    }
+  
+    .cultivar-data {
+      padding: 0 20px;
+    }
+  
+    .imageModal {
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+  
+    .cultivar-head {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
+  
+  .dataTables_filter label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .pagination .page-item.active .page-link {
+    border-radius: 5px !important;
+    background-color: #2db777;
+    color: #fff;
+  }
+  
+  .pagination .page-item .page-link {
+    color: rgb(100, 100, 100);
+    border-radius: 0 !important;
+    background-color: #f8f9fc;
+    border-radius: 5px;
+  }
+  
+  .page-link {
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+  }
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #fff;
+  }
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: red;
+    background-color: red;
+    color: #2db777;
+  }
+  
