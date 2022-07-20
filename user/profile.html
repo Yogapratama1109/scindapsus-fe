@@ -22,10 +22,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
     <link rel="stylesheet" href="../assets/css/user.css">
 
-    <title>Scindapsus Dashboard</title>
+    <title>Scindapsus Edit Profile</title>
 </head>
 
 <body>
@@ -85,21 +85,22 @@
             </div>
         </nav>
 
-        <div class="section-dashboard">
+
+        <div class="section-profile">
             <div class="d-flex justify-content-between align-items-center top-content">
                 <div class="text-box">
-                    <h1 class="f-700">Hi, Vikryelians!</h1>
-                    <p>From this page, you can see your cultivar and upload new cultivar</p>
+                    <h1 class="f-700">Profile Setting</h1>
+                    <p>From this page, you can edit your profile details and edit your password.</p>
                 </div>
                 <div class="btn-group">
                   <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Setting <i class="fa-solid fa-gear text-secondary" style="margin-left: 5px;"></i>
                   </button>
                   <ul class="dropdown-menu profile">
-                    <li><a class="dropdown-item active d-flex justify-content-between" href="#">
+                    <li><a class="dropdown-item d-flex justify-content-between" href="#">
                         <span class="p-0">Dashboard</span> <i class="fa-solid fa-border-all"></i>
                     </a></li>
-                    <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                    <li><a class="dropdown-item active d-flex justify-content-between" href="#">
                         <span>Edit Profile</span> <i class="fa-solid fa-user"></i>
                     </a></li>
                     <li><a class="dropdown-item d-flex justify-content-between" href="#">
@@ -112,12 +113,35 @@
                 </div>
             </div>
 
-            <div class="mx-3 my-4 py-5 text-center upload-box" style="border-radius: 20px;">
-                <img src="../assets/img/user-page/upload-img.svg" class="m-auto">
-                <h4 class="my-4 text-center">Looks like you haven’t upload cultivar yet</h4>
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="btn btn-green">Upload Cultivar</a>
-                    <a href="#" class="btn btn-transparent btn-upload text-green">Scindapsus Gallery</a>
+            <div class="row main-content">
+                <div class="col-md-4">
+                    <img src="../assets/img/user-page/img10.png" class="profile-img d-block m-auto">
+                </div>
+                <div class="col-md-8">
+                    <form class="row g-3 form-profile">
+                        <div class="col-md-6">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" value="Vikryelians!">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="instagram" class="form-label">Instagram</label>
+                            <input type="text" class="form-control" id="instagram" value="@vikryelians!">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" value="Vikryelians@gmail.com">
+                            <small>Read about our <span class="text-green">Privacy Policy</span> and <span class="text-green">Terms Of Services</span></small>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="whatsapp" class="form-label">Whatsapp</label>
+                            <input type="text" class="form-control" id="whatsapp" value="0878">
+                        </div>
+                        <div class="col-6" style="padding-top: 15px;">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-green py-2">Save</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
