@@ -5,72 +5,43 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.text-green {
-    color: #19C078;
+.card1 {
+    width: 100%;
+    border: none;
+    padding: 0 60px !important;
+    margin-top: 15%;
 }
 
-.container.sign-content {
-    padding: 0 !important;
-    margin: 0 !important;
+.card2 {
+    width: 100%;
+    border: none;
+    border-radius: none !important;
 }
 
-.bg-sign {
+.card2 img {
+    width: 100%;
     height: 100vh;
 }
 
-.bg-sign img {
-    width: 100%;
-    height: 100%;
-}
-
-.card-form {
-    border: none;
-    width: 300px;
-    margin-top: 30%;
-    margin-left: 5rem;
-}
-
-@media (max-width: 1118px) {
-    .card-form {
-        margin-left: 3rem;
-    }
-}
-
-@media (max-width: 1054px) {
-    .card-form {
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 992px) {
-    .card-form {
-        margin-left: 2rem;
-    }
-}
-
-@media (max-width: 864px) {
-    .card-form {
-        margin-left: 0;
-        padding: 0 15px 0 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .bg-sign {
+@media (max-width: 767px) {
+    .card2 {
         display: none;
     }
-    .card-form {
-        width: 500px;
-        margin: 0;
+    .card1 {
+        margin-bottom: 10%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px !important;
     }
 }
 
-.card-form .title {
+.card1 .title {
     font-weight: 600;
     margin-left: 10px;
 }
 
-.card-form p {
+.card1 p {
     font-size: 16px;
     margin: 15px 0 15px 10px;
 }
@@ -83,12 +54,30 @@
     position: absolute;
     left: 5px;
     top: 32px;
+    color: #333;
 }
 
 .input-field span.fa-lock {
     position: absolute;
     left: 15px;
     top: 40px;
+    color: #333;
+}
+
+.input-field span.fa-user {
+    position: absolute;
+    left: 5px;
+    top: 32px;
+    color: #333;
+}
+
+.password .toggle-hide {
+    font-size: 14px;
+	color: #263238;
+	position: absolute;
+	top: 45px;
+	right: 15px;
+	cursor: pointer;
 }
 
 .input-field label {
@@ -121,7 +110,7 @@
     color: #B5B5B5;
 }
 
-.password {
+.password, .email {
     margin-top: 30px !important;
 }
 
