@@ -692,6 +692,11 @@ p.copyright {
       justify-content: space-between;
       flex-direction: column;
     }
+
+    .cultivar-data h2 {
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
   }
   
   .dataTables_filter label {
