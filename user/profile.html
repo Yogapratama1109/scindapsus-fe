@@ -31,7 +31,7 @@
 <body>
     <div class="container">
         <!-- nav -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5 py-0">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light py-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="width: 60px;">
                     <img src="../assets/img/user-page/logo-text.svg" alt="">
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="row main-content" style="margin: 6rem 0;">
+            <div class="row main-content" style="margin: 3rem 0;">
                 <div class="col-md-4">
                         <img src="../assets/img/user-page/img10.png" class="profile-img d-block m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 </div>
@@ -149,41 +149,39 @@
 
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="footer-content py-3">
-                <a href="#"><img src="../assets/img/user-page/logo-white.svg" alt=""></a>
-                <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
-                    <li class="li-r"><a href="#" class="text-white text-decoration-none">Home</a></li>
-                    <li class="li-r"><a href="#" class="text-white text-decoration-none">About</a></li>
-                    <li class="li-r"><a href="#" class="text-white text-decoration-none">Gallery</a></li>
-                    <li class="li-r"><a href="#" class="text-white text-decoration-none">Regist Cultivar</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <hr style="height: 2px; margin-top: 0 !important;">
-            </hr>
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
-                <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
-                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram" style="font-size: 18px;"></i></a></li>
-                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></a></li>
-                </ul>
-            </div>
+        <div class="footer-content">
+            <a href="#"><img src="../assets/img/user-page/logo-white.svg" alt=""></a>
+            <ul class="d-flex align-items-center" style="list-style-type: none;">
+                <li class="li-r"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li class="li-r"><a href="#" class="text-white text-decoration-none">About</a></li>
+                <li class="li-r"><a href="#" class="text-white text-decoration-none">Gallery</a></li>
+                <li class="li-r"><a href="#" class="text-white text-decoration-none">Regist Cultivar</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <hr style="height: 2px; margin-top: 0 !important;">
+        </hr>
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
+            <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram" style="font-size: 18px;"></i></a></li>
+                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></a></li>
+            </ul>
         </div>
     </div>
 
     <!-- modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-profile fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog imageModal">
             <div class="imageModalcloseButton">
                 <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
                         class="fa fa-xmark"></i></button>
             </div>
             <div class="modal-content">
-                <div class="modal-header p-5 d-flex flex-column" style="border-bottom: none !important;">
+                <div class="modal-header d-flex flex-column" style="border-bottom: none !important;">
                     <h3 class="text-center text-capitalize mb-4">profile picture</h3>
                     <img src="../assets/img/user-page/img10.png" alt="" class="profile-img rounded-circle">
-                    <div class="d-flex justify-content-center mt-5">
+                    <div class="d-flex justify-content-center btn-modal">
                         <a href="#" class="btn btn-green">Change <i class="fa-solid fa-pen pl-3"></i></a>
                         <a href="#" class="btn btn-danger" style="margin-left: 15px;">Delete <i class="fa-solid fa-trash pl-3"></i></a>
                     </div>
