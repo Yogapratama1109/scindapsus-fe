@@ -22,44 +22,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="../assets/css/SignInUp.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
 
-    <title>Scindapsus SignIn</title>
+    <title>Scindapsus Reset Password</title>
 </head>
 
 <body>
     <div class="content-sign">
         <div class="d-flex flex row g-0">
-            <div class="col-md-6">
-                <div class="card card2">
-                    <img src="./assets/img/bg-sign.png">
+            <div class="col-md-4">
+                <div class="card card-img">
+                    <img src="./assets/img/reset-pw.svg">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card card1 p-3">
-                    <h2 class="title">Sign in</h2>
-                    <p>New to this site? <span class="text-green">Sign Up Now !</span></p>
-                    <div class="d-flex flex-column mt-3"> 
-                        <div class="input-field">
-                            <label>Email</label> 
-                            <span class="fa-solid fa-envelope p-2"></span>
-                            <input class="form-control" type="email" placeholder="Enter your email address"> 
-                        </div>
-                        <div class="input-field password">
-                            <label>Password</label> 
-                            <span class="fa-solid fa-lock"></span>
-                            <input class="form-control password-field" type="password" placeholder="Enter your password" id="password">
-                            <span onclick="toggle('password')"><i class="fa-solid fa-eye toggle-hide" onclick="myFunction(this)"></i> </span>
-                        </div>
-                        <div class="mb-3 form-check d-flex justify-content-between align-items-center pt-3">
-                            <div>
-                                <input type="checkbox" class="form-check-input" id="remember">
-                                <label class="form-check-label" for="remember">Remember me</label>
-                            </div>
-                            <span>Forgot Password ?</span>
-                        </div>
-                        <button class="mt-4 btn btn-success gradient sign d-flex justify-content-center align-items-center">Login</button>
+            <div class="col-md-8">
+                <div class="form-content">
+                    <img src="./assets/img/user-page/logo-text.svg" alt="">
+                    <h3>Create new password</h3>
+                    <div class="text-box">
+                        <p>Your new password must be different from previous used password</p>
                     </div>
+                    <form class="form-reset-pw">
+                        <div class="mb-4 password">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter your new password">
+                          <span onclick="toggle('password')"><i class="fa-solid fa-eye toggle-hide" onclick="myFunction(this)"></i> </span>
+                          <small><i>Must be at least 8 characters</i></small>
+                        </div>
+                        <div class="mb-3 confirm_password">
+                          <label for="confirm_password" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirm_password" placeholder="Confirm your new password">
+                          <span onclick="toggle('confirm_password')"><i class="fa-solid fa-eye toggle-hide" onclick="myFunction(this)"></i> </span>
+                          <small><i>Both password must match</i></small>
+                        </div>
+                        <button type="submit" class="btn btn-green mt-3">Reset Password</button>
+                    </form>
                 </div>
             </div>
         </div>
