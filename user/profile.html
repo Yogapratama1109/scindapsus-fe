@@ -115,7 +115,7 @@
 
             <div class="row main-content" style="margin: 6rem 0;">
                 <div class="col-md-4">
-                    <img src="../assets/img/user-page/img10.png" class="profile-img d-block m-auto">
+                        <img src="../assets/img/user-page/img10.png" class="profile-img d-block m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 </div>
                 <div class="col-md-8">
                     <form class="row g-3 form-profile">
@@ -168,6 +168,26 @@
                     <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram" style="font-size: 18px;"></i></a></li>
                     <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog imageModal">
+            <div class="imageModalcloseButton">
+                <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
+                        class="fa fa-xmark"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-header p-5 d-flex flex-column" style="border-bottom: none !important;">
+                    <h3 class="text-center text-capitalize mb-4">profile picture</h3>
+                    <img src="../assets/img/user-page/img10.png" alt="" class="profile-img rounded-circle">
+                    <div class="d-flex justify-content-center mt-5">
+                        <a href="#" class="btn btn-green">Change <i class="fa-solid fa-pen pl-3"></i></a>
+                        <a href="#" class="btn btn-outline-danger" style="margin-left: 15px;">Delete <i class="fa-solid fa-trash pl-3"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
