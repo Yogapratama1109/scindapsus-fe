@@ -23,6 +23,12 @@
     height: 100vh;
 }
 
+@media (min-width: 991px){
+    .content-sign .content{
+        margin-top: -5rem;
+    }
+}
+
 @media (max-width: 767px) {
     .card2 {
         display: none;
