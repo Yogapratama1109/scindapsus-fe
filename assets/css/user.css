@@ -149,6 +149,19 @@
     background-color: #19C078;
 }
 
+.nav-item ul {
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .nav-item ul {
+        text-align: center;
+    }
+    .nav-item a.dropdown-toggle {
+        text-align: center;
+    }
+}
+
 /* hero */
 .slider-hero {
     width: 100%;
