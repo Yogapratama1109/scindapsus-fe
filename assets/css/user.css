@@ -64,6 +64,24 @@
     }
 }
 
+@media (max-width: 990px) {
+    .navbar-nav .dropdown{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar-nav .dropdown .dropdown-menu{
+        font-size: 12px;
+        padding: 0;
+        border: none;
+        
+    }
+    .navbar-nav .dropdown .dropdown-menu .dropdown-item{
+        font-size: 12px;
+        
+    }
+}
+
 .nav-link {
     color: #000 !important;
 }
