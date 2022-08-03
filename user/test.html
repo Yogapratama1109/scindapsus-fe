@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Important link from https://bootsnipp.com/snippets/XqvZr-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"><div class="pd-wrap">
+
+        <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+.pd-wrap {
+	padding: 40px 0;
+	font-family: 'Poppins', sans-serif;
+}
+.heading-section {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.sub-heading {
+	font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    display: block;
+    font-weight: 600;
+    color: #2e9ca1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.heading-section h2 {
+	font-size: 32px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+.user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+	min-width: 80px;
+	background-size: 100%;
+}
+.carousel-testimonial .item {
+	padding: 30px 10px;
+}
+.quote {
+	position: absolute;
+    top: -23px;
+    color: #2e9da1;
+    font-size: 27px;
+}
+.name {
+	margin-bottom: 0;
+    line-height: 14px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.position {
+	color: #adadad;
+	font-size: 14px;
+}
+.owl-nav button {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	outline: none;
+	height: 25px;
+}
+.owl-nav button svg {
+	width: 25px;
+	height: 25px;
+}
+.owl-nav button.owl-prev {
+	left: 25px;
+}
+.owl-nav button.owl-next {
+	right: 25px;
+}
+.owl-nav button span {
+	font-size: 45px;
+}
+.product-thumb .item img {
+	height: 100px;
+}
+.product-name {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+.product-price-discount {
+	font-size: 22px;
+    font-weight: 400;
+    padding: 10px 0;
+    clear: both;
+}
+.product-price-discount span.line-through {
+	text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #a5a5a5;
+}
+.display-flex {
+	display: flex;
+}
+.align-center {
+	align-items: center;
+}
+h5{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.product-slider .item img{
+    max-height: 350px;
+}
+        </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="slider" class="owl-carousel product-slider">
+                    <div class="item">
+                          <img src="../1658750476-Cutting Plants.jpeg" />
+                    </div>
+                    <div class="item">
+                          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+                    </div>
+                    <div class="item">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+                    </div>
+                    <div class="item">
+                          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+                    </div>
+                    <div class="item">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+                    </div>
+                </div>
+                <div id="thumb" class="owl-carousel product-thumb">
+                    <div class="item">
+                          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+                    </div>
+                    <div class="item">
+                          <img src="../1658750476-Cutting Plants.jpeg" />
+                    </div>
+                    <div class="item">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+                    </div>
+                    <div class="item">
+                          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+                    </div>
+                    <div class="item">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="detail">
+                    <div class="title">
+                        <h6 style="color: #19c078;">Scindapsus</h6>
+                        <h2 style="font-weight: 600;">Scindapsus Mangurai</h2>
+                    </div>
+                    <div class="d-flex align-items-center item mb-4">
+                        <div class="like me-3 d-flex align-items-center">
+                            <i class="fa-regular fa-heart text-danger" id="icon-love"
+                                style="font-size: 1.2rem; cursor: pointer;"></i>
+                            <span id="count-love" class="ms-1">0</span>
+                        </div>
+                        <div class="category me-3">
+                            <h5 style="font-weight: 600;">Category: <span style="font-weight: 400;">Non
+                                    Variegated</span></h5>
+                        </div>
+                        <div class="publish me-3">
+                            <h5 style="font-weight: 600;">Published On: <span
+                                    style="font-weight: 400;">19/06/2022</span></h5>
+                        </div>
+                        <div class="Propagated:">
+                            <h5 style="font-weight: 600;">Propagated: <span
+                                    style="font-weight: 400;">yes</span></h5>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div class="species mb-3">
+                            <h5>Species</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro molestiae quasi error minima voluptatum, mollitia id sunt, in architecto ipsum reiciendis ducimus, qui vero. Voluptates at omnis dolorum tempore corporis?</p>
+                        </div>
+                        <div class="released mb-3">
+                            <h5>Released Year</h5>
+                            <p>2019</p>
+                        </div>
+                        <div class="originator mb-3">
+                            <h5>Originator</h5>
+                            <p>Rizal</p>
+                        </div>
+                        <div class="namer mb-3">
+                            <h5>Namer</h5>
+                            <p>Ahmad</p>
+                        </div>
+                        <div class="origin mb-3">
+                            <h5>Origin</h5>
+                            <p>Jambi, Sulawesi</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="info mt-5">
+            <div class="mean mb-3">
+                <h4>What does the name mean ?</h4>
+                <p>Scindapsus Mangurai is taken from the name of a princess who comes from the story of the origin of the city of Jambi where this type of Scindapsus Argyraeus Variegated (Mangurai) originated.</p>
+            </div>
+            <div class="habit mb-3">
+                <h4>Growth Habit</h4>
+                <p>A slow grower It likes bright indirect light Humidity is best around 60-80% Like more watering Should have a good air circulation</p>
+            </div>
+            <div class="leaf mb-3">
+                <h4>Leaf Characteristics</h4>
+                <p>This Scindapsus Mangurai is a Scindapsus Argyraeus which has the characteristics of thick and velvety leaves from the usual leaves.</p>
+            </div>
+            <div class="haracteristics mb-3">
+                <h4>Varigation Characteristics</h4>
+                <p>Scindapsus Mangurai is a mutation of Scindapsus argyraeus where the original character of the argyraeus is lost due to mutations in the varigata, the varigata character has tricolor (green, white and blue) and because of this makes mangurai unique.</p>
+            </div>
+        </div>
+        <div class="account">
+            <h4>Owner</h4>
+            <div class="profil d-flex align-items-center">
+                <img src="../1658750476-Cutting Plants.jpeg" style="border-radius: 50%; width: 70px; max-height: 70px;">
+                <div class="info ms-3">
+                    <h5 style="font-size: 20px; margin-bottom: .3rem;">Owner Agoy</h5>
+                    <div class="acc">
+                        <a href="" class="me-2">
+                            <img src="../Vector-ig.png" style="width: 24px; height: 24px;">
+                        </a>
+                        <a href="">
+                            <img src="../Vector-wa.png" style="width: 24px; height: 24px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        var iconLove = document.getElementById('icon-love');
+
+        iconLove.onclick = function () {
+            if (iconLove.classList.contains('fa-regular')) {
+                iconLove.classList.remove('fa-regular');
+                iconLove.classList.add('fa-solid');
+            } else {
+                iconLove.classList.remove('fa-solid');
+                iconLove.classList.add('fa-regular');
+            }
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+		    var slider = $("#slider");
+		    var thumb = $("#thumb");
+		    var slidesPerPage = 4; //globaly define number of elements per page
+		    var syncedSecondary = true;
+		    slider.owlCarousel({
+		        items: 1,
+		        slideSpeed: 2000,
+		        nav: false,
+		        autoplay: false, 
+		        dots: false,
+		        loop: true,
+		        responsiveRefreshRate: 200
+		    }).on('changed.owl.carousel', syncPosition);
+		    thumb
+		        .on('initialized.owl.carousel', function() {
+		            thumb.find(".owl-item").eq(0).addClass("current");
+		        })
+		        .owlCarousel({
+		            items: slidesPerPage,
+		            dots: false,
+		            nav: true,
+		            item: 4,
+		            smartSpeed: 200,
+		            slideSpeed: 500,
+		            slideBy: slidesPerPage, 
+		        	navText: ['<svg width="18px" height="18px" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="25px" height="25px" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+		            responsiveRefreshRate: 100
+		        }).on('changed.owl.carousel', syncPosition2);
+		    function syncPosition(el) {
+		        var count = el.item.count - 1;
+		        var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+		        if (current < 0) {
+		            current = count;
+		        }
+		        if (current > count) {
+		            current = 0;
+		        }
+		        thumb
+		            .find(".owl-item")
+		            .removeClass("current")
+		            .eq(current)
+		            .addClass("current");
+		        var onscreen = thumb.find('.owl-item.active').length - 1;
+		        var start = thumb.find('.owl-item.active').first().index();
+		        var end = thumb.find('.owl-item.active').last().index();
+		        if (current > end) {
+		            thumb.data('owl.carousel').to(current, 100, true);
+		        }
+		        if (current < start) {
+		            thumb.data('owl.carousel').to(current - onscreen, 100, true);
+		        }
+		    }
+		    function syncPosition2(el) {
+		        if (syncedSecondary) {
+		            var number = el.item.index;
+		            slider.data('owl.carousel').to(number, 100, true);
+		        }
+		    }
+		    thumb.on("click", ".owl-item", function(e) {
+		        e.preventDefault();
+		        var number = $(this).index();
+		        slider.data('owl.carousel').to(number, 300, true);
+		    });
+
+
+            $(".qtyminus").on("click",function(){
+                var now = $(".qty").val();
+                if ($.isNumeric(now)){
+                    if (parseInt(now) -1> 0)
+                    { now--;}
+                    $(".qty").val(now);
+                }
+            })            
+            $(".qtyplus").on("click",function(){
+                var now = $(".qty").val();
+                if ($.isNumeric(now)){
+                    $(".qty").val(parseInt(now)+1);
+                }
+            });
+		});
+    </script>
+
+</body>
+</html>
