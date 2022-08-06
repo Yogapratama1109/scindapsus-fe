@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Plant</title>
+
+    <!--Bootstrap Assets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!--CSS Component For Layouting-->
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div id="sidebarMain">
+            <div class="wrapperSidebar">
+                <div class="brandLogo">
+                    <img src="./assets/img/plantsasriLogo.png" alt="">
+                </div>
+                <a href="#" class="profile">
+                    <div class="imagesProfile">
+                        <img src="./assets/img/faces.jpg" alt="">
+                    </div>
+                    <div class="profileUser">
+                        <h5 class="labelDay">Morning</h5>
+                        <h5 class="nameUser">Ajat Supriatna</h5>
+                    </div>
+                </a>
+                <div class="sidebar-menu-wrapper">
+                    <li class="listMenuName">
+                        <p>Admin Menu</p>
+                    </li>
+                    <li class="list-menu ">
+                        <div class="icon">
+                            <ion-icon name="grid"></ion-icon>
+                        </div>
+                        <a href="index.html" class="sidebar-menu">My Dashboard</a>
+                    </li>
+                    <li class="list-menu ">
+                        <div class="icon">
+                            <ion-icon name="repeat"></ion-icon>
+                        </div>
+                        <a href="#" class="sidebar-menu">Request</a>
+                    </li>
+                    <li class="list-menu">
+                        <div class="icon">
+                            <ion-icon name="documents"></ion-icon>
+                        </div>
+                        <a href="#" class="sidebar-menu">Document</a>
+                    </li>
+                    <li class="list-menu active">
+                        <div class="icon">
+                            <ion-icon name="people"></ion-icon>
+                        </div>
+                        <a href="#" class="sidebar-menu">Manage User</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="headMain">
+                <div class="brand-section">
+                    <div class="iconBrand">
+                        <img src="./assets/img/plantsasriLogo.png" alt="">
+                    </div>
+                    <div class="sidebarButton">
+                        <img src="./assets/img/menuButton.svg" alt="" class="menuButton">
+                    </div>
+                </div>
+
+                <div class="user-action">
+                    <div class="dropdown notification">
+                        <button class="dropdown-toggle notification-toggle" type="button" id="notificationButton"
+                            data-bs-toggle="dropdown">
+                            <img src="./assets/img/notificationBell.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu notificationList" aria-labelledby="notificationButton">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <div class="notificationNumber">
+                            <p class="numberAllNotification">10</p>
+                        </div>
+                    </div>
+                    <div class="logoutAction">
+                        <img src="./assets/img/powerIcon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentMain">
+
+                <a href="" class="text-decoration-none">
+
+                    <div class="d-flex text-danger">
+                        <i class="bi bi-arrow-90deg-left me-2"></i>
+                        Back To List Plant
+                    </div>
+
+                </a>
+
+                <div class="content mt-4">
+
+                    <h4>Detail Plant</h4>
+
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Cultivar Name :</span></td>
+                                <td>Bunga Bangkai</td>
+                            </tr>
+                        </div>
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Does the name :</span></td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore aperiam
+                                    omnis suscipit ipsam ipsa reiciendis est minima quam deleniti minus
+                                    temporibus, incidunt aspernatur a? Debitis nihil veniam ut quos ad!</td>
+                            </tr>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Type :</span></td>
+                                <td>Bunga</td>
+                            </tr>
+                        </div>
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Released Year :</span></td>
+                                <td>2021</td>
+                            </tr>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Originator :</span></td>
+                                <td>Bunga</td>
+                            </tr>
+                        </div>
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Namer :</span></td>
+                                <td>yaya</td>
+                            </tr>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">The origin of the cultivar :</span></td>
+                                <td>Bunga</td>
+                            </tr>
+                        </div>
+                        <div class="col-md-6">
+                            <tr>
+                                <td><span style="font-weight: 600;">Distinguishing Characteristics :</span></td>
+                                <td>yaya</td>
+                            </tr>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-5">Photo Plant</h4>
+
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <center class="mb-4">
+                                <h6 class="mb-2">Main Photo</h6>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#mainModal">
+                                    View
+                                </button>
+                            </center>
+                        </div>
+                        <div class="col-md-2">
+                            <center class="mb-4">
+                                <h6 class="mb-2">Leaf Blade Photo</h6>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#leafModal">
+                                    View
+                                </button>
+                            </center>
+                        </div>
+                        <div class="col-md-3">
+                            <center class="mb-4">
+                                <h6 class="mb-2">Petioles and Stem Photo</h6>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#petiolesModal">
+                                    View
+                                </button>
+                            </center>
+                        </div>
+                        <div class="col-md-2">
+                            <center class="mb-4">
+                                <h6 class="mb-2">Bloom Photo</h6>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#bloomModal">
+                                    View
+                                </button>
+                            </center>
+                        </div>
+                        <div class="col-md-2">
+                            <center class="mb-4">
+                                <h6 class="mb-2">Fruits Photo</h6>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#fruitsModal">
+                                    View
+                                </button>
+                            </center>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mainModal" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="imageModalcloseButton">
+                <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
+                        class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="../1658750476-Cutting Plants.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="leafModal" tabindex="-1" aria-labelledby="leafModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="imageModalcloseButton">
+                <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
+                        class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="../1658750476-Cutting Plants.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="petiolesModal" tabindex="-1" aria-labelledby="petiolesModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="imageModalcloseButton">
+                <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
+                        class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="../1658750476-Cutting Plants.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bloomModal" tabindex="-1" aria-labelledby="bloomModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="imageModalcloseButton">
+                <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
+                        class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="../1658750476-Cutting Plants.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="fruitsModal" tabindex="-1" aria-labelledby="fruitsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="imageModalcloseButton">
+                <button type="button" class="btn rounded-circle" data-bs-dismiss="modal"><i
+                        class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="../1658750476-Cutting Plants.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Vendor-->
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
